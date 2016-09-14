@@ -20,7 +20,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        this.setupVue();
     },
     // Bind Event Listeners
     //
@@ -49,28 +48,6 @@ var app = {
         // receivedElement.setAttribute('style', 'display:block;');
         console.log('Received Event: ' + id);
     },
-    setupVue: function(){
-        var vm = new Vue({
-            el: '#vue-instance',
-            data: {
-                randomWord: 'hello , cordova',
-                words: [
-                    'lvpeng',
-                    'xiaofan',
-                    'lvbin',
-                    'father',
-                    'mother',
-                    'myson'
-                ]
-            },
-            methods: {
-                getRandomWord: function(){
-                    var randomIndex = Math.floor(Math.random() * this.words.length);
-                    this.randomWord = this.words[randomIndex];
-                }
-            }
-        })
-    }
 };
 
 

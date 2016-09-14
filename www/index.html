@@ -18,13 +18,9 @@
         <title>Hello Cordova</title>
     </head>
     <body>
-        <div id="vue-instance" class="app">
-            <h1>Random Word</h1>
-            <button id="btn-get-random-word" v-on:click="getRandomWord">Get Random Word</button>
-            <p>{{ randomWord }}</p>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script src="http://cdn.jsdelivr.net/vue/1.0.16/vue.js"></script>
+        <random-word></random-word>
+        <script type="text/javascript" src="js/bundle.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
